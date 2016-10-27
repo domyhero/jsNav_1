@@ -19,16 +19,16 @@
 			throw {
 				name:'不该犯的错',
 				message:'老兄你把数据格式输入对好不？'
-			};
-			console.log(a+b);
-			return a+b;
+			};		
 		};
-		return 0;
+		console.log(a+b);
+		return a+b || 0;
 	};
 
 
 	// add('b','c');
 	try{
+		add(15,20);
 		add('b','c');
 	}catch(err){
 		console.log(err);
