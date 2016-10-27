@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+<head>
+	<title>测试</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1.0"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<meta name="description" content="网站描述语言"/>
+	<meta name="Keywords" content="关键语"/>
+	<meta name="renderer" content="webkit"/>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+	function add(a,b){
+		if(typeof a != 'number' && typeof b != 'number'){
+			throw {
+				name:'不该犯的错',
+				message:'老兄你把数据格式输入对好不？'
+			};
+			console.log(a+b);
+			return a+b;
+		};
+		return 0;
+	};
+
+
+	// add('b','c');
+	try{
+		add('b','c');
+	}catch(err){
+		console.log(err);
+	};
+	add('b','c');
+</script>
+</body>
+</html>
