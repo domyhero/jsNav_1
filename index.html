@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1.0"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=1.0"/>
+	<title>测试</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			font: inherit;
+			border: 0px;
+			vertical-align: baseline;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		body{
+			font: 14px/1.5 "microsoft yaihe"  ;
+			background-color: #fff;
+			color: #000;
+		}
+		.box{
+			width: 1000px;
+			margin: 10px auto;
+			line-height: 30px;
+		}
+		.box .t_title:after{
+			content: '';
+			height: 0px;
+			display: block;
+			overflow: hidden;
+			visibility: hidden;
+			clear: both;
+		}
+		.box .t_title{
+			display: table;
+			width: 100%;
+		}
+		.t_title > h2{
+			/* float: left; */
+			/* width: 50%; */
+			display: table-cell;
+			text-align: center;
+			padding: 8px 10px;
+			border: 1px solid #ccc;
+			border-right: 0px;
+		}
+		.t_title > h2:last-child{
+			border-right: 1px solid #ccc;
+		}
+		table{
+			width: 100%;
+			border-spacing: 0px;
+			border-bottom: 1px solid #ccc;
+		}
+		table thead tr th,table tbody tr td{
+			text-align: center;
+			border: 1px solid #ccc;
+			padding: 10px;
+			border-bottom: 0px;
+			border-right: 0px;
+		}
+		table tbody tr:last-child td{
+			border-bottom: 1px solid #ccc;
+		}
+		table thead tr th{
+			border-bottom: 0px;
+			background-color: #ccc;
+		}
+		table thead tr th:hover{
+			background-color: #efc9c9;
+			color: #fff;
+			/* border-color: #efc9c9; */
+		}
+		table tbody tr td:last-child{
+			border-right: 1px solid #ccc;
+		}
+		table thead tr th:last-child{
+			border-right: 1px solid #ccc;
+		}
+		.l_1,.l_2{
+			display: none;
+		}
+		.to_D{
+			text-align: right;
+			overflow: hidden;
+		}
+		.to_D .bbtn{
+			float: left;
+			/* font: 16px/1.5 bold "microsoft yahei"; */
+			font-size: 20px;
+			font-weight: bold;
+			margin-right: 10px;
+			width: 20px;
+			text-align: center;
+		}
+		.l_1 .to_D .bbtn{
+			margin-left: 15px;
+		}
+		.l_2 .to_D .bbtn{
+			margin-left: 30px;
+		}
+	</style>
+</head>
+<body>
+
+<h1>hello world!</h1>
+<div class="box" ng-controller="myController">
+	<table>
+		<thead>
+			<tr>
+				<th>表头1</th>
+				<th>表头2</th>
+				<th>表头3</th>
+				<th>表头4</th>
+				<th>表头5</th>
+				<th>表头6</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="l_0">
+				<td><div class="to_D"><span class="bbtn">+</span>层级1</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_1">
+				<td><div class="to_D"><span class="bbtn">+</span>层级2</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_1">
+				<td><div class="to_D"><span class="bbtn">+</span>层级2</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_0">
+				<td><div class="to_D"><span class="bbtn">+</span>层级1</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_1">
+				<td><div class="to_D"><span class="bbtn">+</span>层级2</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_1">
+				<td><div class="to_D"><span class="bbtn">+</span>层级2</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_0">
+				<td><div class="to_D"><span class="bbtn">+</span>层级1</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_1">
+				<td><div class="to_D"><span class="bbtn">+</span>层级2</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+			<tr class="l_2">
+				<td><div class="to_D"><span class="bbtn">+</span>层级3</div></td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+				<td>内容</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+</div>
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//在第一级分类上点触发
+		$("table tbody tr.l_0 td:first-child").click(function(){
+			$("table tbody tr.l_2").fadeOut(100);
+			var $tempIndex = $("table tbody tr.l_0").index($(this).parent());
+			var $startIndex = $("table tbody tr").index($(this).parent());
+			var $endIndex;
+			//下一个有同class的节点
+			var nextSameClassNode = $("table tbody tr.l_0").eq($tempIndex+1);
+			// console.log(nextSameClassNode.length);
+			if(nextSameClassNode.length){
+				$endIndex = $("table tbody tr").index(nextSameClassNode);
+				var tempNode = $("table tbody tr:lt("+$endIndex+"):gt("+$startIndex+")");
+				// console.log(tempNode);
+				$(tempNode).each(function(){
+					var $this = $(this);
+					var isL_1Class = $(this).hasClass('l_1');
+					if(isL_1Class){
+						var isHidden = $this.is(":hidden");
+						if(isHidden){
+							$this.fadeIn(100);
+						}else{
+							$this.fadeOut(100);
+						};
+					};
+				});
+				/*var isHidden = tempNode.is(":hidden");
+				if(isHidden){
+					tempNode.fadeIn(100);
+				}else{
+					tempNode.fadeOut(100);
+				};*/
+			}else{
+				var tNode = $(this).parent().nextAll();
+				console.log(tNode);
+				$(tNode).each(function(){
+					var $this = $(this);
+					var isL_1Class = $(this).hasClass('l_1');
+					if(isL_1Class){
+						var isHidden = $this.is(":hidden");
+						if(isHidden){
+							$this.fadeIn(100);
+						}else{
+							$this.fadeOut(100);
+						};
+					};
+				});
+				/*var trueHidden = tNode.is(":hidden");
+				if(trueHidden){
+					tNode.fadeIn(100);
+				}else{
+					tNode.fadeOut(100);
+				};*/
+			};
+		});
+
+		//在第二级分类上点击触发
+		$("table tbody tr.l_1 td:first-child").click(function(){
+			//获取当前点击元素父亲节点的索引
+			var  $startIndex = $("table tbody tr").index($(this).parent());
+			//获取当前节点在同类中的索引
+			var sameClassIndex = $("table tbody tr.l_1").index($(this).parent());
+			var $endIndex;
+			//获取下一个同类节点
+			var sNode = $("table tbody tr.l_1").eq(sameClassIndex + 1);
+			var tempIndex = $("table tbody tr").index(sNode);
+
+			//中间是否有1级节点
+			var isHasLevel1 = $("table tbody tr:lt("+tempIndex+"):gt("+$startIndex+")").hasClass('l_0');
+			if(isHasLevel1){
+				var jjNode = $("table tbody tr").eq(tempIndex).prev();
+				$endIndex = $("table tbody tr").index(jjNode);
+				// console.log($endIndex);
+				var tempNode = $("table tbody tr:lt("+$endIndex+"):gt("+$startIndex+")");
+				var isHidden = tempNode.is(":hidden");
+				if(isHidden){
+					tempNode.fadeIn(100);
+				}else{
+					tempNode.fadeOut(100);
+				};
+			}else if(tempIndex == -1){
+				var tempNode = $("table tbody tr:gt("+$startIndex+")");
+				var isHidden = tempNode.is(":hidden");
+				if(isHidden){
+					tempNode.fadeIn(100);
+				}else{
+					tempNode.fadeOut(100);
+				};
+			}else{
+				// $endIndex = $("table tbody tr").index($)
+				var tempNode = $("table tbody tr:lt("+tempIndex+"):gt("+$startIndex+")");
+				var isHidden = tempNode.is(":hidden");
+				if(isHidden){
+					tempNode.fadeIn(100);
+				}else{
+					tempNode.fadeOut(100);
+				};
+			};
+			console.log(tempIndex);
+		});
+	});
+</script>
+</body>
+</html>

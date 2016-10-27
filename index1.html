@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1.0"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=1.0"/>
+	<title>阿波的页面</title>
+
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+			vertical-align: baseline;
+			font: inherit;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #fff;
+			font-size: 14px;
+			color: #000;
+			font-family: "microsoft yahei" ,sans-serif;
+		}
+		.aBo_box{
+			margin: 0px auto;
+			padding: 10px;
+			max-width: 1200px;
+		}
+		.b_ul:after,.td_first:after{
+			content: '';
+			display: block;
+			height: 0px;
+			clear: both;
+			overflow: hidden;
+			visibility: hidden;
+		}
+		.b_ul{
+			width: 100%;
+			display: block;
+			list-style: none;
+		}
+		.aBo_box .t_title{
+			background-color: #f7f7f7;
+		}
+		.b_ul li{
+			float: left;
+			width: 10%;
+			padding: 8px;
+			text-align: center;
+			font-size: 16px;
+			display: block;
+			border: 1px solid #ccc;
+			border-bottom: 0px;
+			border-right: 0px;
+			line-height: 20px;
+			white-space: nowrap;
+			overflow: hidden;
+			-o-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			word-break: break-all;
+		}
+		.t_title .b_ul li{
+			border-bottom: 1px solid #ccc;
+		}
+		.b_ul li:last-child{
+			border-right: 1px solid #ccc;
+		}
+		.b_ul li:nth-of-type(n+5){
+			width: 20%;
+		}
+/* 		.itemL_0 > .b_ul > li{
+			border-bottom: 1px solid #ccc;
+		}
+ */		.itemL_0:first-child > .b_ul > li{
+			border-top: 0px;
+		}
+		.itemL_1:first-child > .b_ul > li{
+			border-top: 0px;
+		}
+/* 		.itemL_1 > .b_ul:last-child > li{
+			border-bottom: 1px solid #ccc;
+		} */
+		.itemL_0:last-child > .b_ul > li,.itemL_0:last-child  .itemL_1:last-child > .b_ul > li,.itemL_0:last-child  .itemL_1:last-child .itemL_2:last-child > .b_ul > li{
+			border-bottom: 1px solid #ccc;
+		}
+		.td_first{
+			cursor: pointer;
+			text-align: right;
+		}
+		.itemL_1 .td_first > .op-btn{
+			margin-left: 15px;
+		}
+		.itemL_2 .td_first > .op-btn{
+			margin-left: 25px;
+		}
+		.td_first > .op-btn{
+			display: block;
+			float: left;
+			width: 20px;
+			font-size: 18px;
+			color: #000;
+			font-weight: bold;
+		}
+		.itemL_2 > .b_ul > li{
+			/* border-bottom: 1px solid #ccc; */
+		}
+		.itemL_2:last-child > .b_ul > li{
+			/* border-bottom: 1px solid #ccc; */
+		}
+		.LP_1,.LP_2{
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+
+<h1>hello world!</h1>
+<div class="aBo_box">
+
+	<!--标题部分-->
+	<div class="t_title">
+		<ul class="b_ul">
+			<li>分类名称</li>
+			<li>分类类型</li>
+			<li>分类排序</li>
+			<li>分类说明</li>
+			<li>创建时间</li>
+			<li>分类图标</li>
+			<li>操作</li>
+		</ul>
+	</div>
+
+	<!--主内容部分 start-->
+	<div class="b_mainCtxt">
+		<!--一级 start-->
+		<div class="itemL_0">
+			<ul class="b_ul">
+				<li><div class="td_first"><span class="op-btn">+</span>一级</div></li>
+				<li>V币分类类型</li>
+				<li>0</li>
+				<li>汽车</li>
+				<li>2019-11-11 12:22:11</li>
+				<li>xxicon</li>
+				<li>操作选择</li>
+			</ul>
+			<!--隐藏的二级分类-->
+			<div class="LP_1">
+
+
+			<div class="itemL_1">
+				<ul class="b_ul">
+					<li><div class="td_first"><span class="op-btn">+</span>二级</div></li>
+					<li>V币分类类型</li>
+					<li>0</li>
+					<li>汽车</li>
+					<li>2019-11-11 12:22:11</li>
+					<li>xxicon</li>
+					<li>操作选择</li>
+				</ul>
+
+
+				<!--三级分类 start-->
+				<div class="LP_2">
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+				</div>
+				<!--三级分类 end-->
+			</div>
+			<div class="itemL_1">
+				<ul class="b_ul">
+					<li><div class="td_first"><span class="op-btn">+</span>二级</div></li>
+					<li>V币分类类型</li>
+					<li>0</li>
+					<li>汽车</li>
+					<li>2019-11-11 12:22:11</li>
+					<li>xxicon</li>
+					<li>操作选择</li>
+				</ul>
+			</div>
+
+			</div>
+
+			<!--二级分类结束-->
+		</div>
+		<!--一级 end-->
+
+
+		<!--一级 start-->
+		<div class="itemL_0">
+			<ul class="b_ul">
+				<li><div class="td_first"><span class="op-btn">+</span>一级</div></li>
+				<li>V币分类类型</li>
+				<li>0</li>
+				<li>汽车</li>
+				<li>2019-11-11 12:22:11</li>
+				<li>xxicon</li>
+				<li>操作选择</li>
+			</ul>
+			<!--隐藏的二级分类-->
+			<div class="LP_1">
+
+
+			<div class="itemL_1">
+				<ul class="b_ul">
+					<li><div class="td_first"><span class="op-btn">+</span>二级</div></li>
+					<li>V币分类类型</li>
+					<li>0</li>
+					<li>汽车</li>
+					<li>2019-11-11 12:22:11</li>
+					<li>xxicon</li>
+					<li>操作选择</li>
+				</ul>
+
+
+				<!--三级分类 start-->
+				<div class="LP_2">
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+				</div>
+				<!--三级分类 end-->
+			</div>
+			<div class="itemL_1">
+				<ul class="b_ul">
+					<li><div class="td_first"><span class="op-btn">+</span>二级</div></li>
+					<li>V币分类类型</li>
+					<li>0</li>
+					<li>汽车</li>
+					<li>2019-11-11 12:22:11</li>
+					<li>xxicon</li>
+					<li>操作选择</li>
+				</ul>
+
+				<!--三级分类 start-->
+				<div class="LP_2">
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+				</div>
+				<!--三级分类 end-->
+			</div>
+
+			</div>
+
+			<!--二级分类结束-->
+		</div>
+		<!--一级 end-->
+
+
+		<!--一级 start-->
+		<div class="itemL_0">
+			<ul class="b_ul">
+				<li><div class="td_first"><span class="op-btn">+</span>一级</div></li>
+				<li>V币分类类型</li>
+				<li>0</li>
+				<li>汽车</li>
+				<li>2019-11-11 12:22:11</li>
+				<li>xxicon</li>
+				<li>操作选择</li>
+			</ul>
+			<!--隐藏的二级分类-->
+			<div class="LP_1">
+
+
+			<div class="itemL_1">
+				<ul class="b_ul">
+					<li><div class="td_first"><span class="op-btn">+</span>二级</div></li>
+					<li>V币分类类型</li>
+					<li>0</li>
+					<li>汽车</li>
+					<li>2019-11-11 12:22:11</li>
+					<li>xxicon</li>
+					<li>操作选择</li>
+				</ul>
+
+
+				<!--三级分类 start-->
+				<div class="LP_2">
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+					<div class="itemL_2">
+						<ul class="b_ul">
+							<li><div class="td_first"><span class="op-btn">+</span>三级</div></li>
+							<li>V币分类类型</li>
+							<li>0</li>
+							<li>汽车</li>
+							<li>2019-11-11 12:22:11</li>
+							<li>xxicon</li>
+							<li>操作选择</li>
+						</ul>
+					</div>
+				</div>
+				<!--三级分类 end-->
+			</div>
+			<div class="itemL_1">
+				<ul class="b_ul">
+					<li><div class="td_first"><span class="op-btn">+</span>二级</div></li>
+					<li>V币分类类型</li>
+					<li>0</li>
+					<li>汽车</li>
+					<li>2019-11-11 12:22:11</li>
+					<li>xxicon</li>
+					<li>操作选择</li>
+				</ul>
+			</div>
+
+			</div>
+
+			<!--二级分类结束-->
+		</div>
+		<!--一级 end-->
+	</div>
+	<!--主内容部分 end-->
+
+
+
+</div>
+
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript">
+	
+	$(function(){
+		//点击一级分类的时候触发
+		$(".itemL_0 > ul > li .td_first").click(function(){
+			$(".LP_2").fadeOut(100);
+			// $("")
+			var $index = $(".itemL_0 > ul").index($(this).parent().parent());
+			var $target = $(".LP_1").eq($index);
+			var isHidden = $target.is(":hidden");
+			if(isHidden){
+				$target.fadeIn(100);
+			}else{
+				$target.fadeOut(100);
+			};
+		});
+
+
+		//二级分类上点击触发
+		$(".itemL_1 > ul > li .td_first").click(function(){
+			//获取当前itemL_1节点
+			var $target  = $(this).parent().parent().parent();
+			// console.log($target);
+			var $child = $target.children(".LP_2");
+			console.log($child);
+			var isHidden = $child.is(":hidden");
+			if(isHidden){
+				$child.fadeIn(100);
+			}else{
+				$child.fadeOut(100);
+			};
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+<head>
+	<meta charset="utf-8"/>
+	<title>测试</title>
+</head>
+<body>
+
+<button class="btn">点击打1</button>
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".btn").live("click",function(){
+			console.log("一次");
+			$(this).remove();
+			$("<button class='btn'>点击打1</button>").appendTo($("body"));
+		});
+	});
+</script>
+</body>
+</html>
